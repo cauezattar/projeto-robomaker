@@ -1,11 +1,77 @@
-<!DOCTYPE html>
-<html lang="pt-br>
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Crie sua conta</title>
-</head>
-<body>
-   
-</body>
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cadastro</title>
+  </head>
+  <body>
+    <header>
+      <h1>Crie sua Conta</h1>
+
+      <nav>
+        <a href="index.html">Voltar para a Página Inicial</a>
+      </nav>
+    </header>
+
+    <main>
+      <form>
+        <p>
+          <label for="nome">Nome Completo:</label><br />
+          <input 
+          type="text" 
+          id="nome" 
+          name="nome" 
+          placeholder="digite seu nome Completo" required>
+        </p>
+
+        <p>
+          <label for="email">E-mail:</label><br />
+          <input 
+          type="email" 
+          id="email" 
+          name="email" 
+          placeholder="Digite seu E-mial" required/>
+        </p>
+
+        <p>
+          <label for="senha">Senha:</label><br />
+          <input 
+          type="password" 
+          id="senha" 
+          name="senha" 
+         placeholder="Digite sua senha" required/>
+/>
+        </p>
+
+        <p>Perfil de Aluno:</p>
+
+        <input 
+        type="radio" 
+        id="estudante" 
+        name="perfil" required/>
+        <label for="estudante">Estudante</label>
+
+        <input 
+        type="radio" 
+        id="professor" 
+        name="perfil" required/>
+        <label for="professor">Professor/Hobbista</label>
+
+        <p>
+          <label for="trilha">Trilha de Interesse:</label>
+        </p>
+
+        <select id="trilha" name="trilha">
+          <option>Robótica Básica</option>
+          <option>Inteligência Artificial</option>
+          <option>Programação</option>
+        </select>
+
+        <p>
+          <button type="submit">Cadastrar</button>
+        </p>
+      </form>
+    </main>
+  </body>
 </html>
